@@ -13,3 +13,12 @@ function precision_Method() {
     var X=12938.3012987376112;
     document.getElementById("Precision").innerHTML=X.toPrecision(10);
 }
+
+function full_Sentence() {
+    var part_1 = "I have ";
+    var part_2 = "created this ";
+    var part_3 = "sentence using ";
+    var part_4 = "concatenate.";
+    var whole_sentence = part_1.concat(part_2, part_3, part_4);
+    document.getElementById("Concatenate").innerHTML = whole_sentence;
+}
