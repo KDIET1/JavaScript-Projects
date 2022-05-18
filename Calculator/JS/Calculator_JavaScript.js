@@ -95,6 +95,11 @@ function Handle_Operator(Next_Operator) {
         if (!target.matches('button')) {
             return;
         }
+        if (target.classList.contains('operator')) {
+            Handle_Operator(target.value);
+            Update_Display();
+            return;
+        }
         if (target.classList.contains('decimal')) {
             Input_Decimal(target.value);
             Update_Display();
